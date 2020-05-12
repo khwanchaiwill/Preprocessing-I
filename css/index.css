@@ -1,1 +1,596 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  border: solid black;
+  background-color: #828485;
+  width: 100%;
+  padding: 1rem;
+}
+@media (max-width: 500px) {
+  body {
+    background-color: #04b1e6;
+  }
+}
+body header {
+  background-color: #090b32;
+  border-radius: 0.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 1.5rem;
+  border: double #6a666b;
+  height: 20vh;
+}
+body header:hover {
+  background-color: #093e4e;
+}
+@media (max-width: 500px) {
+  body header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #828485;
+  }
+}
+body header h1 {
+  font-family: 'Old Standard TT', serif;
+  margin-top: 2.5rem;
+  width: 100%;
+  font-size: 3rem;
+  color: #04b1e6;
+  border: 2px dotted #de9df1;
+  border-radius: 1rem;
+}
+body header h1:hover {
+  background-color: #828485;
+}
+@media (max-width: 500px) {
+  body header h1 {
+    width: 85%;
+    margin: 0rem;
+    font-size: 1.3rem;
+    text-align: center;
+    background-color: #093e4e;
+  }
+}
+body header nav {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  body header nav {
+    justify-content: center;
+  }
+}
+body header nav a {
+  font-family: 'Old Standard TT', serif;
+  color: #04b1e6;
+  text-decoration: none;
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border: dotted #de9df1;
+}
+@media (max-width: 500px) {
+  body header nav a {
+    padding: 0.2rem;
+    margin: 0.1rem;
+    font-size: 0.9rem;
+    background-color: #093e4e;
+  }
+}
+body section.container-one {
+  display: flex;
+  flex-direction: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+}
+body section.container-one .introduce {
+  width: 30%;
+  align-content: center;
+  text-align: center;
+}
+body section.container-one .introduce img {
+  width: 100%;
+}
+@media (max-width: 500px) {
+  body section.container-one .introduce {
+    width: 95%;
+  }
+}
+@media (max-width: 500px) {
+  body section.container-one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #828485;
+  }
+}
+body section.container-one .introduce-two {
+  line-height: 1.5;
+  width: 25%;
+  padding: 2rem;
+}
+@media (max-width: 500px) {
+  body section.container-one .introduce-two {
+    width: 95%;
+  }
+}
+body section.container-one .introduce-two h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+}
+body section.container-one .skills-set {
+  width: 20%;
+}
+@media (max-width: 500px) {
+  body section.container-one .skills-set {
+    width: 95%;
+  }
+}
+body section.container-one .skills-set h3 {
+  text-align: center;
+  font-size: 1.6rem;
+}
+body section.container-one .skills-set li {
+  margin-left: 1rem;
+}
+body section.container-one .skills-set p {
+  color: #0a2adf;
+  font-size: 1.3rem;
+}
+body section.container-one .skills-two {
+  line-height: 1.5;
+}
+@media (max-width: 500px) {
+  body section.container-one .skills-two {
+    width: 95%;
+  }
+}
+body section.container-one .skills-two h3 {
+  text-align: center;
+  font-size: 1.6rem;
+}
+body section.container-one .skills-two p span {
+  color: #0a2adf;
+  font-size: 1.3rem;
+}
+body .container-two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #093e4e;
+  align-content: center;
+}
+body .container-two h2 {
+  font-size: 2rem;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #0a2adf;
+}
+@media (max-width: 500px) {
+  body .container-two .experience {
+    width: 400px;
+    height: 150px;
+  }
+}
+body .container-two .experience img {
+  width: 100%;
+  height: 60vh;
+}
+body .job {
+  width: 100%;
+}
+@media (max-width: 500px) {
+  body .job {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #828485;
+  }
+}
+body .job .job-title {
+  align-items: center;
+}
+body .job .job-title .job1,
+body .job .job-title .job2,
+body .job .job-title .job3,
+body .job .job-title .job4,
+body .job .job-title .job5 {
+  display: flex;
+  flex-direction: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  body .job .job-title .job1,
+  body .job .job-title .job2,
+  body .job .job-title .job3,
+  body .job .job-title .job4,
+  body .job .job-title .job5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #828485;
+  }
+}
+body .job .job-title .job1 a,
+body .job .job-title .job2 a,
+body .job .job-title .job3 a,
+body .job .job-title .job4 a,
+body .job .job-title .job5 a {
+  padding: 5rem;
+  margin: 2rem;
+  font-size: 2rem;
+  text-decoration: none;
+}
+@media (max-width: 500px) {
+  body .job .job-title .job1 a,
+  body .job .job-title .job2 a,
+  body .job .job-title .job3 a,
+  body .job .job-title .job4 a,
+  body .job .job-title .job5 a {
+    font-size: 1.3rem;
+    color: #0a2adf;
+  }
+}
+body .job img {
+  width: 40%;
+  height: 40vh;
+}
+@media (max-width: 500px) {
+  body .job img {
+    width: 400px;
+    height: 150px;
+  }
+}
+body .work {
+  display: flex;
+  flex-direction: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  body .work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #828485;
+  }
+}
+body .work img {
+  width: 35%;
+  height: 35vh;
+}
+body .work .job-title1 {
+  align-items: center;
+}
+@media (max-width: 500px) {
+  body .work .job-title1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #828485;
+  }
+}
+body .work .job-title1 .job6,
+body .work .job-title1 .job7,
+body .work .job-title1 .job8 {
+  width: 100%;
+  display: flex;
+  flex-direction: wrap;
+  justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  body .work .job-title1 .job6,
+  body .work .job-title1 .job7,
+  body .work .job-title1 .job8 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #828485;
+  }
+}
+body .work .job-title1 .job6 a,
+body .work .job-title1 .job7 a,
+body .work .job-title1 .job8 a {
+  color: #0a2adf;
+  padding: 5rem;
+  margin: 2rem;
+  font-size: 2rem;
+  text-decoration: none;
+}
+@media (max-width: 500px) {
+  body .work .job-title1 .job6 a,
+  body .work .job-title1 .job7 a,
+  body .work .job-title1 .job8 a {
+    font-size: 1.3rem;
+    color: #0a2adf;
+  }
+}
+body .education {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #093e4e;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  body .education {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #828485;
+  }
+}
+body .education .school1 img {
+  width: 30%;
+  height: 35vh;
+}
+body .education .school1 a {
+  align-content: center;
+  font-size: 2rem;
+  color: #04b1e6;
+}
+@media (max-width: 500px) {
+  body .education .school1 a {
+    font-size: 1.3rem;
+    color: #0a2adf;
+  }
+}
+body .education .school1 p {
+  font-size: 1.6rem;
+  color: #f5ead1;
+}
+body .education .school2 img {
+  width: 50%;
+}
+body .education .school2 a {
+  align-content: center;
+  font-size: 2rem;
+  color: #04b1e6;
+}
+@media (max-width: 500px) {
+  body .education .school2 a {
+    font-size: 1.3rem;
+    color: #0a2adf;
+  }
+}
+body .education .school2 p {
+  font-size: 1.6rem;
+  color: #f5ead1;
+}
+@media (max-width: 500px) {
+  body .education .school2 p {
+    font-size: 1.3rem;
+    color: #0a2adf;
+  }
+}
+body .education .school3 img {
+  width: 30%;
+  height: 35vh;
+}
+body .education .school3 a {
+  align-content: center;
+  font-size: 2rem;
+  color: #04b1e6;
+}
+@media (max-width: 500px) {
+  body .education .school3 a {
+    font-size: 1.3rem;
+    color: #0a2adf;
+  }
+}
+body .education .school3 p {
+  font-size: 1.6rem;
+  color: #f5ead1;
+}
+@media (max-width: 500px) {
+  body .education .school3 p {
+    color: #0a2adf;
+  }
+}
+body .education h2 {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  width: 100%;
+  font-size: 2rem;
+}
+body .education .school1 {
+  display: flex;
+  flex-direction: wrap;
+  justify-content: space-evenly;
+}
+body footer {
+  padding: 1rem;
+  background-color: #090b32;
+  display: flex;
+  flex-direction: wrap;
+  justify-content: space-evenly;
+  justify-content: space-between;
+}
+body footer p {
+  margin: 1rem;
+  color: #04b1e6;
+  font-size: 1.3rem;
+}
+@media (max-width: 500px) {
+  body footer p {
+    padding: 0.2rem;
+    margin: 0.1rem;
+    font-size: 0.9rem;
+    background-color: #f5ead1;
+  }
+}
+body footer em {
+  margin: 1rem;
+  color: #04b1e6;
+  font-size: #04b1e6;
+}
+@media (max-width: 500px) {
+  body footer em {
+    padding: 0.2rem;
+    margin: 0.1rem;
+    font-size: 0.9rem;
+    background-color: #f5ead1;
+  }
+}
+body footer nav {
+  padding: 2rem;
+  padding-top: 2rem;
+  font-size: 1.3rem;
+}
+body footer nav a {
+  color: #de9df1;
+  border-radius: 1rem;
+}
+@media (max-width: 500px) {
+  body footer nav a {
+    padding: 0.2rem;
+    margin: 0.1rem;
+    font-size: 0.9rem;
+    background-color: #f5ead1;
+  }
+}
